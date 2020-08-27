@@ -2,8 +2,10 @@ version: '3'
 
 services:
   tecogan:
-    image: tensorflow/tensorflow
+    image: ochir:tecogan
     tty: true
     ports:
       - '8500:8500'
       - '8501:8501'
+    volumes:
+      - ./:/src
